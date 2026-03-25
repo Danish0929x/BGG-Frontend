@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GojiLabs - Digital Product Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">Goji<span>Labs</span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+        </ul>
+        <button class="get-started-btn">
+            Get Started
+            <span>↗</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>An Award-Winning Digital Product Agency.</h1>
+            <p>We are a strategy-led digital product agency that drives real business impact. From user-focused design to full web and mobile app development, our team creates digital products that scale with your business.</p>
+            <button class="book-call-btn">
+                Book Discovery Call
+                <span>↗</span>
+            </button>
+
+            <!-- Stats Section -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10M<span class="stat-highlight">BGG</span></div>
+                    <p class="stat-label">Fixed Total Supply</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4<span class="stat-plus">+</span></div>
+                    <p class="stat-label">Roadmap Phases</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-placeholder">
+                [Product Showcase Image]
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="documents-section" id="documents">
+        <div class="documents-container">
+            <h1>Our Documents</h1>
+            <p class="documents-subtitle">Browse and download our latest documents and resources</p>
+
+            <div class="documents-grid">
+                <!-- PDF Card 1 -->
+                <div class="pdf-card">
+                    <div class="pdf-icon">📄</div>
+                    <h3>Document 1</h3>
+                    <p class="pdf-description">Description of your first document goes here</p>
+                    <div class="pdf-actions">
+                        <a href="documents/document1.pdf" class="pdf-link" download>Download PDF</a>
+                        <button class="pdf-view" onclick="openPdfModal('documents/document1.pdf')">View</button>
+                    </div>
+                </div>
+
+                <!-- PDF Card 2 -->
+                <div class="pdf-card">
+                    <div class="pdf-icon">📄</div>
+                    <h3>Document 2</h3>
+                    <p class="pdf-description">Description of your second document goes here</p>
+                    <div class="pdf-actions">
+                        <a href="documents/document2.pdf" class="pdf-link" download>Download PDF</a>
+                        <button class="pdf-view" onclick="openPdfModal('documents/document2.pdf')">View</button>
+                    </div>
+                </div>
+
+                <!-- PDF Card 3 -->
+                <div class="pdf-card">
+                    <div class="pdf-icon">📄</div>
+                    <h3>Document 3</h3>
+                    <p class="pdf-description">Description of your third document goes here</p>
+                    <div class="pdf-actions">
+                        <a href="documents/document3.pdf" class="pdf-link" download>Download PDF</a>
+                        <button class="pdf-view" onclick="openPdfModal('documents/document3.pdf')">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="tokenomics-section" id="tokenomics">
+        <div class="tokenomics-container">
+            <h2 class="section-title">Tokenomics</h2>
+
+            <!-- Feature 1: Token Utility -->
+            <div class="feature-card feature-1">
+                <div class="feature-content">
+                    <span class="feature-tag">TOKEN UTILITY</span>
+                    <h3>Multiple Use Cases<br>For <span class="highlight-red">BGG</span> <span class="highlight-purple">Token</span></h3>
+                    <p>Access AI-powered analytics, participate in staking for rewards, enable trustless transactions on DEX, and provision liquidity within the ecosystem.</p>
+                    <button class="feature-btn">Learn More <span>→</span></button>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-placeholder">3D Icon</div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Fixed Supply -->
+            <div class="feature-card feature-2">
+                <div class="feature-image">
+                    <div class="feature-placeholder">3D Icon</div>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-tag">TOKENOMICS</span>
+                    <h3>Fixed Supply Model<br>For <span class="highlight-red">Value</span> <span class="highlight-purple">Protection</span></h3>
+                    <p>With only 10,000,000 BGG tokens in circulation, scarcity is guaranteed. Strategic token distribution supports liquidity, ecosystem development, AI infrastructure, community rewards, and growth partnerships.</p>
+                    <div class="feature-items">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <strong>Liquidity Provisioning</strong>
+                                <p>for market stability</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <strong>AI Infrastructure</strong>
+                                <p>for ecosystem optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Security -->
+            <div class="feature-card feature-3">
+                <div class="feature-content">
+                    <span class="feature-tag">SECURITY & TRUST</span>
+                    <h3>Blockchain Security<br>With <span class="highlight-red">AI</span> <span class="highlight-purple">Protection</span></h3>
+                    <p>Smart contracts combined with AI-driven risk assessment ensure the highest protection for user assets and transactions. Built with transparency, decentralization, and intelligent automation.</p>
+                    <button class="feature-btn">Explore <span>→</span></button>
+                </div>
+                <div class="feature-image">
+                    <div class="feature-placeholder">3D Icon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <span class="close-btn" onclick="closePdfModal()">&times;</span>
+            <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openPdfModal(pdfPath) {
+            const modal = document.getElementById('pdfModal');
+            const pdfViewer = document.getElementById('pdfViewer');
+            pdfViewer.src = pdfPath;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target == modal) {
+                closePdfModal();
+            }
+        }
+    </script>
+</body>
+</html>
